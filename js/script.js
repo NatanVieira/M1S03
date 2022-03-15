@@ -76,5 +76,31 @@ let mostraCalculadora = () => {
     }
 
     alert("O resultado do seu cálculo é: " + resultado);
+}
 
+let calculadoraPA = () => {
+    var numeroInicial;
+    var raiz;
+    numeroInicial = Number(prompt("Digite o número inicial da PA: "));
+    raiz = Number(prompt("Digite a raiz da PA: "));
+
+    var numeroAnterior;
+    var listaDeValores = [];
+    numeroAnterior = numeroInicial;
+    listaDeValores[0] = numeroInicial;
+
+    for(var i = 1; i <= 9; i++){
+        numeroAnterior = numeroAnterior + raiz;
+        listaDeValores[i] = numeroAnterior;
+    }
+    alert(listaDeValores[0] + ", " +
+          listaDeValores[1] + ", " +
+          listaDeValores[2] + ", " +
+          listaDeValores[3] + ", " +
+          listaDeValores[4] + ", " +
+          listaDeValores[5] + ", " +
+          listaDeValores[6] + ", " +
+          listaDeValores[7] + ", " +
+          listaDeValores[8] + ", " +
+          listaDeValores[9]);
 }
