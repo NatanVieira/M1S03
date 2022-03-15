@@ -47,3 +47,34 @@ let mostraIdadeBaseadaEmAnos = () => {
     idade = anoAtual - anoNascimento
     alert("Sua idade é " + idade + " ou " + (idade - 1));
 }
+
+let mostraCalculadora = () => {
+    var operador;
+    var num1;
+    var num2;
+    var resultado;
+
+    operador = prompt("Escolha um operador (+, -, * e /): ");
+    num1 = prompt("Escolha o primeiro número da operação: ");
+    num2 = prompt("Escolha o segundo número da operação: ");
+
+    switch(operador){
+        case "+":
+            resultado = Number(num1) + Number(num2);
+            break;
+        case "-":
+            resultado = num1 - num2;
+            break;
+        case "*":
+            resultado = num1 * num2;
+            break;
+        case "/":
+            resultado = num1 / num2;
+            break;
+        default:
+            resultado = "Operador inválido.";
+    }
+
+    alert("O resultado do seu cálculo é: " + resultado);
+
+}
