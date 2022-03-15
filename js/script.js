@@ -11,3 +11,14 @@ let mostraNome = () => {
     alert(nome);
 
 }
+
+let mostraNomeIdadeEsporte = () => {
+    var nome;
+    var idade;
+    var esporte;
+    nome = prompt("Digite seu nome: ");
+    idade = Number(prompt("Digite sua idade: "));
+    esporte = confirm("Gosta de esportes?");
+
+    console.log("nome: ", nome, " idade: ", idade, " gosta de esportes? ", esporte ? "Sim" : "Não");
+}
