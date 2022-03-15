@@ -22,3 +22,11 @@ let mostraNomeIdadeEsporte = () => {
 
     console.log("nome: ", nome, " idade: ", idade, " gosta de esportes? ", esporte ? "Sim" : "Não");
 }
+
+let mostraNomeSobrenome = () => {
+    var nome;
+    var sobrenome;
+    nome = prompt("Digite seu nome: ");
+    sobrenome = prompt("Digite seu sobrenome: ");
+    alert(nome + " " + sobrenome);
+}
