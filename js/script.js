@@ -30,3 +30,20 @@ let mostraNomeSobrenome = () => {
     sobrenome = prompt("Digite seu sobrenome: ");
     alert(nome + " " + sobrenome);
 }
+
+let mostraSobrenomeTamanho = () => {
+    var sobrenome;
+    sobrenome = prompt("Digite seu sobrenome (o último): ");
+    alert("Olá, " + sobrenome + ". Seu sobrenome contém " 
+          + sobrenome.length + "letras");
+}
+
+let mostraIdadeBaseadaEmAnos = () => {
+    var anoNascimento;
+    var anoAtual;
+    var idade;
+    anoNascimento = prompt("Digite o ano de seu nascimento: ");
+    anoAtual = prompt("Digite o ano atual: ");
+    idade = anoAtual - anoNascimento
+    alert("Sua idade é " + idade + " ou " + (idade - 1));
+}
